@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, Button, TextInput } from "react-native";
+import { View, StyleSheet, Button, TextInput } from "react-native";
 
 const AddTodo = ({ submitHandler }) => {
   const [text, setText] = useState("");
-  const changeHandler = val => {
+  const changeHandler = (val) => {
     setText(val);
   };
 
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 6,
     borderBottomWidth: 1,
-    borderBottomColor: "#ddd"
-  }
+    borderBottomColor: "#ddd",
+  },
 });
 export default AddTodo;
